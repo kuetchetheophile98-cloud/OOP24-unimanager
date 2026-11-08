@@ -1,7 +1,7 @@
 package it.unibo.unimanager.model;
 
 /**
- * Osservatore dei cambiamenti dell'ateneo (pattern Observer). La vista si registra
+ * Osservatore dei cambiamenti dell'ateneo 
  * per aggiornarsi ogni volta che i dati cambiano.
  */
 @FunctionalInterface

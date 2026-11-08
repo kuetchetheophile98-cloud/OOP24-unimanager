@@ -5,11 +5,8 @@ public class EntitaNonTrovataException extends DominioException {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * @param tipo nome dell'entità cercata (es. "Studente")
-     * @param id identificativo non trovato
-     */
-    public EntitaNonTrovataException(final String tipo, final int id) {
-        super(tipo + " con id " + id + " non trovato.");
+    
+     public EntitaNonTrovataException(  final String tipo,  final int id) {
+ super(tipo + " con id " + id + "    non trovato.") ;
     }
-}
+ }

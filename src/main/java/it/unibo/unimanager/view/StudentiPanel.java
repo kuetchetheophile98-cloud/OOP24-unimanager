@@ -1,16 +1,18 @@
 package it.unibo.unimanager.view;
 
-import it.unibo.unimanager.controller.UniManagerController;
-import it.unibo.unimanager.model.DominioException;
-import it.unibo.unimanager.model.Studente;
 import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
+
+import it.unibo.unimanager.controller.UniManagerController;
+import it.unibo.unimanager.model.DominioException;
+import it.unibo.unimanager.model.Studente;
 
 /** Scheda per inserire studenti e consultarne l'elenco. */
 final class StudentiPanel extends JPanel implements Aggiornabile {
@@ -53,11 +55,14 @@ final class StudentiPanel extends JPanel implements Aggiornabile {
     }
 
     @Override
-    public void aggiorna() {
-        final List<Object[]> righe = new ArrayList<>();
-        for (final Studente s : controller.studenti()) {
-            righe.add(new Object[] {s.getId(), s.getCognome(), s.getNome(), s.getMatricola()});
+         public void    aggiorna()  {
+           final List<Object[]> righe = new ArrayList<>();
+              for (final Studente s : controller.studenti()) {
+                 righe.add(new Object[] {s.getId(), s.getCognome(), s.getNome(), s.getMatricola()});
+
         }
-        tabella.setRighe(righe);
+           tabella.setRighe(righe)   ;
+
+           
     }
 }
