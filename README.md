@@ -6,7 +6,7 @@ Applicazione in Java per la gestione degli esami di un ateneo:
 
 Progetto del corso di Programmazione ad Oggetti, Università di Bologna.
 #   Requisiti
- JDK  o successivo
+ JDK 17 o successivo
  Gradle
 
      ## Comandi
